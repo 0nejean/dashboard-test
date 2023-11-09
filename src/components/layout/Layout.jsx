@@ -3,8 +3,15 @@ import Header from "./header/Header";
 import styled from "styled-components";
 import Title from "../common/Tilte";
 import History from "../common/History";
-import { Box } from "@chakra-ui/react";
-import { Flex, Spacer, IconButton, Input } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Spacer,
+  InputGroup,
+  InputLeftElement,
+  Input,
+  Image,
+} from "@chakra-ui/react";
 import {
   SearchIcon,
   BellIcon,
@@ -32,16 +39,27 @@ const Layout = ({ title, pagename, children }) => {
             borderRadius="70px"
           >
             <Flex justifyContent="space-around" alignItems="center">
-              <IconButton
-                bg="transparents"
-                mr="10px"
-                aria-label="Search database"
-                icon={<SearchIcon />}
-              />
-              <Input mr="10px" placeholder="Search" border="none" />
+              <InputGroup
+                width="230px"
+                bg="gray.100"
+                borderRadius="70px"
+                borderColor={"white"}
+              >
+                <InputLeftElement pointerEvents="none">
+                  <SearchIcon ml="10px" mr="10px" color="gray.600" />
+                </InputLeftElement>
+                <Input type="Search" placeholder="Search" borderRadius="70px" />
+              </InputGroup>
+
               <BellIcon mr="10px" />
               <InfoOutlineIcon mr="10px" />
               <HamburgerIcon mr="10px" />
+              <Image
+                borderRadius="full"
+                boxSize="30px"
+                src="https://images.unsplash.com/photo-1613328007570-379c5b22317d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fCVFQiVCMCU5NCVFQyU5RCVCNCVFQyU5OCVBQyVFQiVBMCU5QiVFRCU4QyVBOCVFRCU4NCVCNHxlbnwwfHwwfHx8MA%3D%3D"
+                alt="pattern"
+              />
             </Flex>
           </Box>
         </Flex>

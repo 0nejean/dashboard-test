@@ -9,7 +9,6 @@ import {
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
   Checkbox,
 } from "@chakra-ui/react";
@@ -24,8 +23,6 @@ const Check = () => {
       <CardBody py={2} px={5}>
         <TableContainer overflowX={"hidden"} overflowY={"auto"} maxH="296px">
           <Table variant="simple">
-            <TableCaption>Imperial to metric conversion factors</TableCaption>
-
             <Thead>
               <Tr>
                 <Th>NAME</Th>

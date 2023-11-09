@@ -4,7 +4,6 @@ import {
   Heading,
   CardBody,
   Table,
-  TableCaption,
   Thead,
   Tbody,
   Tr,
@@ -241,8 +240,6 @@ const Development = () => {
         <TableContainer overflowX={"hidden"} overflowY={"auto"} maxH="296px">
           {/*  size={['sm', 'md', 'lg']} */}
           <Table variant="simple">
-            <TableCaption>Development Table</TableCaption>
-
             <Thead>
               <Tr>
                 <Th>Title</Th>

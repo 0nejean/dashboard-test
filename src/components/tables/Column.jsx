@@ -9,7 +9,6 @@ import {
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
 } from "@chakra-ui/react";
 
@@ -23,8 +22,6 @@ const Column = () => {
       <CardBody py={2} px={5}>
         <TableContainer>
           <Table variant="simple">
-            <TableCaption>Imperial to metric conversion factors</TableCaption>
-
             <Thead>
               <Tr>
                 <Th>NAME</Th>
